@@ -20,6 +20,23 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint'],
   rules: {
-    'react/react-in-jsx-scope': 'off'
+    'react/prop-types': 'off',
+    'react/react-in-jsx-scope': 'off',
+    '@typescript-eslint/ban-types': [
+      'error',
+      {
+        types: {
+          String: {
+            message: 'Use string instead',
+            fixWith: 'string'
+          },
+
+          '{}': {
+            message: 'Use object instead',
+            fixWith: 'object'
+          }
+        }
+      }
+    ]
   }
 }

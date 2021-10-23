@@ -1,5 +1,7 @@
-import React from 'react'
+import { FC } from 'react'
 import './button.scss'
+
+import { Button } from '@mui/material'
 
 interface ButtonProps {
   /**
@@ -27,18 +29,18 @@ interface ButtonProps {
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({
+export const MaterialButton: FC<ButtonProps> = ({
   primary = false,
   size = 'medium',
   backgroundColor,
   label,
   ...props
-}: ButtonProps) => {
+}) => {
   const mode = primary
     ? 'storybook-button--primary'
     : 'storybook-button--secondary'
   return (
-    <button
+    <Button
       type='button'
       className={['storybook-button', `storybook-button--${size}`, mode].join(
         ' '
@@ -47,6 +49,6 @@ export const Button = ({
       {...props}
     >
       {label}
-    </button>
+    </Button>
   )
 }

@@ -2,6 +2,8 @@ import { FC } from 'react'
 import logo from './logo.svg'
 import './App.scss'
 
+import { Button } from '@mui/material'
+
 const App: FC = () => {
   return (
     <div className='App'>
@@ -18,6 +20,15 @@ const App: FC = () => {
         >
           Learn React
         </a>
+        <br />
+        <Button
+          variant='outlined'
+          onClick={() => {
+            alert('Hello MaterialUI')
+          }}
+        >
+          Hello MaterialUI
+        </Button>
       </header>
     </div>
   )

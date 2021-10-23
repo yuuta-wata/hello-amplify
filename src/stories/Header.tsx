@@ -1,21 +1,20 @@
-import React from 'react'
-
-import { Button } from './Button'
+import { FC } from 'react'
+import { MaterialButton } from './Button'
 import './header.scss'
 
 interface HeaderProps {
-  user?: {}
+  user?: { [key: string]: unknown }
   onLogin: () => void
   onLogout: () => void
   onCreateAccount: () => void
 }
 
-export const Header = ({
+export const Header: FC<HeaderProps> = ({
   user,
   onLogin,
   onLogout,
   onCreateAccount
-}: HeaderProps) => (
+}) => (
   <header>
     <div className='wrapper'>
       <div>
@@ -44,11 +43,11 @@ export const Header = ({
       </div>
       <div>
         {user ? (
-          <Button size='small' onClick={onLogout} label='Log out' />
+          <MaterialButton size='small' onClick={onLogout} label='Log out' />
         ) : (
           <>
-            <Button size='small' onClick={onLogin} label='Log in' />
-            <Button
+            <MaterialButton size='small' onClick={onLogin} label='Log in' />
+            <MaterialButton
               primary
               size='small'
               onClick={onCreateAccount}
