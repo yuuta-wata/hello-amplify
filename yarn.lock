@@ -2688,6 +2688,15 @@
     "@emotion/cache" "^11.4.0"
     prop-types "^15.7.2"
 
+"@mui/styled-engine@^5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@mui/styled-engine/-/styled-engine-5.0.2.tgz#a2d188e80d2c8c3501316649c1901a41ac07e376"
+  integrity sha512-vApnXLj/5V+SbBy+jGFtPgu3tgs0ybSdwWLwXcnUAdNdRyJBffi2KyOP8fhUONLOcZBMU2heNXWz/Zqn5kbDKQ==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    "@emotion/cache" "^11.5.0"
+    prop-types "^15.7.2"
+
 "@mui/system@^5.0.4":
   version "5.0.4"
   resolved "https://registry.yarnpkg.com/@mui/system/-/system-5.0.4.tgz#cff806533c9063efc9e1c6ec99731b64ac0632e8"
@@ -2696,6 +2705,20 @@
     "@babel/runtime" "^7.15.4"
     "@mui/private-theming" "^5.0.1"
     "@mui/styled-engine" "^5.0.1"
+    "@mui/types" "^7.0.0"
+    "@mui/utils" "^5.0.1"
+    clsx "^1.1.1"
+    csstype "^3.0.9"
+    prop-types "^15.7.2"
+
+"@mui/system@^5.0.6":
+  version "5.0.6"
+  resolved "https://registry.yarnpkg.com/@mui/system/-/system-5.0.6.tgz#053ad18e3888f041137db9f0c0ac1486c86972a0"
+  integrity sha512-qZdgODiO82/r1bH9KV5bdqqx/q14i32OGUK/bO6phhXM/DX0TmWSUsnPqFX4F7/UKrvBHsGzIb8ohdRuihQD+Q==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    "@mui/private-theming" "^5.0.1"
+    "@mui/styled-engine" "^5.0.2"
     "@mui/types" "^7.0.0"
     "@mui/utils" "^5.0.1"
     clsx "^1.1.1"
@@ -3787,14 +3810,6 @@
   version "7.2.6"
   resolved "https://registry.yarnpkg.com/@types/eslint/-/eslint-7.2.6.tgz#5e9aff555a975596c03a98b59ecd103decc70c3c"
   integrity sha512-I+1sYH+NPQ3/tVqCeUSBwTE/0heyvtXqpIopUUArlBm0Kpocb8FbMa3AZ/ASKIFpN3rnEx932TTXDbt9OXsNDw==
-  dependencies:
-    "@types/estree" "*"
-    "@types/json-schema" "*"
-
-"@types/eslint@^7.28.2":
-  version "7.28.2"
-  resolved "https://registry.yarnpkg.com/@types/eslint/-/eslint-7.28.2.tgz#0ff2947cdd305897c52d5372294e8c76f351db68"
-  integrity sha512-KubbADPkfoU75KgKeKLsFHXnU4ipH7wYg0TRT33NK3N3yiu7jlFAAoygIWBV+KbuHx/G+AvuGX6DllnK35gfJA==
   dependencies:
     "@types/estree" "*"
     "@types/json-schema" "*"

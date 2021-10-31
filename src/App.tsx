@@ -2,7 +2,7 @@ import { FC } from 'react'
 import logo from './logo.svg'
 import './App.scss'
 
-import { Button } from '@mui/material'
+import { TermsContainer } from './components/container/organisms/terms'
 
 const App: FC = () => {
   return (
@@ -21,14 +21,23 @@ const App: FC = () => {
           Learn React
         </a>
         <br />
-        <Button
-          variant='outlined'
-          onClick={() => {
-            alert('Hello MaterialUI')
-          }}
-        >
-          Hello MaterialUI
-        </Button>
+        <TermsContainer sx={{ width: 300, height: 400 }} label='同意する。'>
+          body1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+          blanditiis tenetur unde suscipit, quam beatae rerum inventore
+          consectetur, neque doloribus, cupiditate numquam dignissimos laborum
+          fugiat deleniti? Eum quasi quidem quibusdam. body1. Lorem ipsum dolor
+          sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde
+          suscipit, quam beatae rerum inventore consectetur, neque doloribus,
+          cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi
+          quidem quibusdam. body1. Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae
+          rerum inventore consectetur, neque doloribus, cupiditate numquam
+          dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.
+          body1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+          blanditiis tenetur unde suscipit, quam beatae rerum inventore
+          consectetur, neque doloribus, cupiditate numquam dignissimos laborum
+          fugiat deleniti? Eum quasi quidem quibusdam.
+        </TermsContainer>
       </header>
     </div>
   )
