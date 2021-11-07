@@ -1,10 +1,10 @@
 import { FC } from 'react'
 // atoms
 import { Button } from '../../atoms/button'
-// molecules
-import { Select } from '../../molecules/select'
+// custom style
+import { Select } from './style'
 
-import { Props } from './type'
+import type { Props } from './type'
 
 export const Home: FC<Props> = ({ selectItems, onPush }) => {
   return (
